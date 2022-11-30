@@ -9,5 +9,21 @@
   margin: auto;
   top: 50%;
   transform: translateY(-50%);
-  height: 300px
+  padding: 20px 0;
+  height: 250px;
+}
+
+.card__image{
+  margin: 20px auto 0 auto;
+}
+
+.card__image img{
+  width:60px;
+}
+
+.card__text {
+  margin: auto;
+  text-align: center;
+  padding: 0 15px;
+  font-size: 18px;
 }

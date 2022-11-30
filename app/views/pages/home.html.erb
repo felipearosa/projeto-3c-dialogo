@@ -7,20 +7,19 @@
       </div>
     </div>
   </div>
-  </div>
-  <!-- Slider main container -->
-  <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <%= render '/pages/cards' %>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-    </div>
+  <div class="cards-container--home">
+    <div class="container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <%= render '/pages/cards', locals:{ var1: "ssssvmwkoes", var2: "nvwea"} %>
+          <%= render '/pages/cards', locals:{ var1: "asdvea", var2: "nvwea"} %>
+          <%= render '/pages/cards', locals:{ var1: "sssefwsvmwkoes", var2: "nvwea"} %>
+          <%= render '/pages/cards', locals:{ var1: "ssssvmwkoes", var2: "nvwea"} %>
 
-    <!-- If we need navigation buttons -->
+        </div>
+      </div>
+    </div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+  </div>
 </header>

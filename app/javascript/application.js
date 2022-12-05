@@ -2,7 +2,7 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import "bootstrap"
-
+import { fixNavbar } from "./misc/navbar";
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -23,7 +23,9 @@ const swiper = new Swiper('.swiper', {
 
 });
 
-console.log('ivew')
+document.querySelector('.section__text').getBoundingClientRect()
+
+fixNavbar();
 
 
 // 'cube' | 'coverflow' | 'flip' | 'creative' | 'cards'

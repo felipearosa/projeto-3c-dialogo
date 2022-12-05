@@ -1,0 +1,16 @@
+.section--cards {
+  background-color: #ffffff;
+  background: linear-gradient($light-gray 90%, #ffffff 90%);
+}
+
+
+.section__text {
+  padding: 80px 0;
+  width:60%;
+  margin: auto;
+}
+
+.section__text h3 {
+  text-align: center;
+  color: $dark-gray;
+}

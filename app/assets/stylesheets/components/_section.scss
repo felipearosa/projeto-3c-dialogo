@@ -1,16 +1,119 @@
 .section--cards {
-  background-color: #ffffff;
-  background: linear-gradient($light-gray 90%, #ffffff 90%);
+  background: linear-gradient($primary-color 70%, $secondary-color 70%);
 }
 
 
 .section__text {
-  padding: 80px 0;
-  width:60%;
+  padding: 120px 0;
+  width: 60%;
   margin: auto;
 }
 
 .section__text h3 {
   text-align: center;
-  color: $dark-gray;
+  color: $secondary-color;
+  margin: 0;
+}
+
+.section--about,
+.book__container {
+  display: flex;
+}
+
+.section--about {
+  justify-content: space-between;
+  margin: 60px 0 0 auto;
+  width: 90%
+}
+
+.book__container {
+  width: 90%;
+}
+
+.section--book {
+  height: 600px;
+  background-color: #000000;
+  position: relative;
+  top: 50px;
+  width: 100%;
+  z-index: -1;
+  background-image: url(/assets/hero-logo-3.png);
+  background-position: right -80px top -100px;
+  background-repeat: no-repeat;
+}
+
+.book__image {
+  width: 680px;
+}
+
+.book__image img {
+  position: absolute;
+  top: -50px;
+  width: 680px;
+}
+
+
+
+.about__text {
+  color: $primary-color;
+  align-self: center;
+  font-size: 28px;
+}
+
+.about__text h3 {
+  font-size: 44px;
+  margin-bottom: 30px;
+}
+
+.about__text ul {
+  list-style-type: '✔';
+}
+
+.about__text li {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+
+
+
+.about__image img {
+  display: block;
+  margin: 0 0 0 auto;
+}
+
+
+.book__title--container {
+  position: relative;
+  height: 350px;
+}
+
+.book__title {
+  position: absolute;
+  margin: 0 auto;
+  width: 400px;
+  left: -50px;
+  top: 70px;
+}
+
+.book__title h3 {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.book__title h3 span {
+  background-color: $secondary-color;
+  color: $primary-color;
+  box-shadow: -10px 0px 0 7px $secondary-color,
+    10px 0px 0 7px $secondary-color,
+    0 0 0 7px $secondary-color;
+  box-decoration-break: clone;
+}
+
+.book__subtext {
+  color: $secondary-color;
+  padding: 15px;
+  font-size: 30px;
+  width: 550px;
 }

@@ -8,6 +8,20 @@
   background-repeat: no-repeat;
 }
 
+.hero-banner:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 80%;
+  margin: auto;
+  border-bottom: 0.5px solid #ffffff60;
+  text-align: center;
+  right: 0;
+  box-shadow: 0px 1px 9px 1px #ffffff80;
+}
+
 .hero-text {
   position: absolute;
   bottom: 20vh;

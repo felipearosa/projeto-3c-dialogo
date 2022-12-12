@@ -15,7 +15,7 @@
   </div>
   <div class="cards-container--home">
     <div class="swiper-container">
-      <div class="swiper">
+      <div class="swiper home__cards">
         <div class="swiper-wrapper">
           <%= render '/pages/cards', locals:{ text: "Maior capacidade de entender pontos de vistas diferentes", image: "mensagem-check.png", alt: "icone messagem check" } %>
           <%= render '/pages/cards', locals:{ text: "Aumento da confiança, do respeito e da empatia", image: "confiar.png", alt: "icone confiar" } %>
@@ -71,6 +71,26 @@
   </div>
 </section>
 <section class="section--training">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="training__text col-md-6 col-sm-12">
+        <h3>Treinamentos</h3>
+        <h4>Pedagogia do Aprender Fazendo</h4>
+        <div class="training__subtext">Uma forma de aprender que mistura teoria e prática, de forma que os alunos possam experimentar durante os cursos aquilo que estão aprendendo e sair dali com confiança para aplicar os novos conhecimentos dentro de sua organização e até em suas relações pessoais.</div>
+        <div class="btn btn-dark btn-custom">Ver Todos</div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="swiper training__cards">
+          <div class="swiper-wrapper">
+            <%= render '/pages/training_cards', locals:{ title:"Comunicação Dialógica", subtitle:"As 6 habilidades de quem tem sucesso dentro das organizações", text: "Neste treinamento os participantes sairão aptos a identificar os principais perigos que afetam a comunicação dentro das organizações nos dias de hoje e desenvolverão as seis habilidades fundamentais para alcançar o sucesso em suas comunicações profissionais e pessoais." } %>
+            <%= render '/pages/training_cards', locals:{ title:"Expert em Conversas Difíceis", subtitle:"Como tratar de qualquer assunto sem criar desentendimentos ou ressentimentos", text: "Neste treinamento os participantes aprenderão na prática um novo modelo de conversa, baseado num método exclusivo e comprovado de diálogo composto por quatro técnicas: a escuta dialógica; a identificação de emoções e sentimentos; a readmiração de crenças; e a expressão genuína de suas ideias." } %>
+            <%= render '/pages/training_cards', locals:{ title:"Negociação Dialógica", subtitle:"Como transformar nossas diferenças em oportunidades de inovação e colaboração", text: "Neste treinamento os participantes sairão qualificados para negociar conflitos de uma forma inteiramente inovadora. Serão capazes de encontrar novas ideias e soluções ao interagir com quem tem perspectivas diferentes e até opostas às suas, transformando os conflitos em verdadeiras oportunidades de colaboração e engajamento." } %>
+            <%= render '/pages/training_cards', locals:{ title:"Como ser Entendido com Apresentações Impactantes", text: "Neste treinamento os participantes sairão capacitados para realizar apresentações de alto impacto, expressando suas ideias de forma clara e profunda, de modo que sejam compreendidas pelos ouvintes." } %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="section--publishing">
   <div class="container">

@@ -5,12 +5,16 @@
 .card {
   box-shadow: 0px 0px 10px 1px #00000010;
   border-radius: 5px;
-  width: 80%;
   margin: auto;
   top: 50%;
   transform: translateY(-50%);
   padding: 20px 0;
+  height: 100%;
+}
+
+.home__card--width {
   height: 250px;
+  width: 80%;
 }
 
 .card__image{
@@ -26,5 +30,32 @@
   text-align: center;
   padding: 0 15px;
   font-size: 22px;
-  color: $dark-gray
+  color: $dark-gray;
+  font-weight:200;
+}
+
+.training__cards{
+  height: 100%;
+}
+
+.card--training__title , .card--training__text {
+  color: $primary-color;
+}
+
+.card--training__title{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.card--training__text {
+  font-size: 18px;
+  font-weight: 200;
+}
+.card--training{
+  padding:20px
+}
+
+.card--content{
+  margin: auto;
+  padding: 0 20px;
 }

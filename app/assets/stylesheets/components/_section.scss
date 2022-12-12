@@ -80,6 +80,7 @@ ul {
 .about__text li {
   margin-bottom: 20px;
   padding-left: 10px;
+  font-weight: 300;
 }
 
 
@@ -159,15 +160,15 @@ ul {
   max-width: 600px;
 }
 
-.publishing__box h4{
+.publishing__box h4 {
   margin-bottom: 30px;
 }
 
-.publishing__individual{
+.publishing__individual {
   margin-bottom: 10px;
 }
 
-.publishing__individual:last-child{
+.publishing__individual:last-child {
   margin-bottom: 0;
 }
 
@@ -179,4 +180,36 @@ ul {
 .publishing__author {
   font-weight: 200;
   font-size: 16px;
+}
+
+.section--training {
+  margin: 200px 0 50px 0;
+}
+
+.training__text {
+  color: $primary-color;
+  padding: 0 30px;
+}
+
+.training__text h3 {
+  font-size: 40px;
+}
+
+.training__text h4 {
+  color: $secondary-color;
+  background-color: $primary-color;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.training__subtext {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.card--training__text span {
+  font-weight: 400;
+  font-style: italic;
 }

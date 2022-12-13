@@ -27,10 +27,6 @@
   font-size: 20px;
 }
 
-.navbar-options:hover {
+.navbar-options:hover, .navbar-options:focus, .navbar-options:active {
   color: #474747;
-}
-
-.navbar-options:active {
-  color: #474747
 }

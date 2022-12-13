@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   resources :publications
   # Defines the root path route ("/")
   # root "articles#index"
+
+  get '/treinamentos', to: 'trainnings#index'
+  resources :trainnings, only: [:index]
 end

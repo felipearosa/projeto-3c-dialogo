@@ -1,0 +1,16 @@
+<div class="swiper-slide">
+  <div class="card card--training">
+    <div class="card--content">
+      <div class="card--training__title">
+        <%= locals[:title] %>
+      </div>
+      <div class="card--training__text">
+        <% if locals[:subtitle] %>
+          <span><%= locals[:subtitle] %></span><br><br>
+        <% end %>
+        <%= locals[:text] %>
+      </div>
+      <div class="btn btn-dark mt-3">Ver Treinamento</div>
+    </div>
+  </div>
+</div>

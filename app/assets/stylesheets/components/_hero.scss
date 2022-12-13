@@ -1,0 +1,37 @@
+.hero-banner{
+  height: 90vh;
+  background-color: $primary-color;
+  position: relative;
+  width: 100%;
+  background-image:url("./assets/hero-logo-3.png");
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+}
+
+.hero-banner:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 80%;
+  margin: auto;
+  border-bottom: 0.5px solid #ffffff60;
+  text-align: center;
+  right: 0;
+  box-shadow: 0px 1px 9px 1px #ffffff80;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20vh;
+  color: $secondary-color;
+}
+
+.hero-text > h1 {
+  font-weight: 700;
+}
+
+.hero-text > h2 {
+  font-weight: 100;
+}

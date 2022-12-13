@@ -39,32 +39,32 @@ if (window.location.pathname === '/') {
 
   });
 
+  const trainingCards = new Swiper('.training__cards', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    effect: 'creative',
+    creativeEffect: {
+      prev: {
+        // will set `translateZ(-400px)` on previous slides
+        translate: [0, 0, -400],
+        shadow: true
+      },
+      next: {
+        // will set `translateX(100%)` on next slides
+        translate: ['100%', 0, 0],
+        shadow: true
+      },
+    },
+
+    autoplay: {
+      delay: 3000,
+    },
+  });
+
+  document.querySelector('.section__text').getBoundingClientRect()
 }
 
-const trainingCards = new Swiper('.training__cards', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  effect: 'creative',
-  creativeEffect: {
-    prev: {
-      // will set `translateZ(-400px)` on previous slides
-      translate: [0, 0, -400],
-      shadow: true
-    },
-    next: {
-      // will set `translateX(100%)` on next slides
-      translate: ['100%', 0, 0],
-      shadow: true
-    },
-  },
-
-  autoplay: {
-    delay: 3000,
-  },
-});
-
-document.querySelector('.section__text').getBoundingClientRect()
 
 fixNavbar();
 

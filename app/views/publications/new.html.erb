@@ -1,0 +1,12 @@
+<div class="container text-dark my-4">
+  <h1>Nova Publicação</h1>
+  <%= simple_form_for @publication, defaults: { input_html: { class: 'text-dark' } }  do |f| %>
+    <%= f.input :title %>
+    <%= f.input :subtitle %>
+    <%= f.input :text %>
+    <%= f.input :author %>
+    <%= f.input :date %>
+    <%= f.input :pdf_url %>
+    <%= f.submit class:"btn btn-dark mt-4"  %>
+  <% end %>
+</div>

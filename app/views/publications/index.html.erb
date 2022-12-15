@@ -1,31 +1,31 @@
 <div class="publication__container">
   <div class="row align-items-center">
     <div class="col-md-8 col-sm-12">
-      <h2>Publicações</h2>
-      <h1>Lorem ipsum dolor sit amet, consectetur</h1>
-      <div class="publication__subtitle">Ut turpis orci, cursus convallis risus id, sodales pulvinar magna</div>
-      <div class="publication__author">Por Rafael Monteiro - 22 de Novembro, 2022</div>
-      <div class="publication__text">Maecenas laoreet eros risus, cursus tristique nunc tincidunt mattis. Vivamus nec nunc ullamcorper, sagittis sapien id, congue elit. Aenean eu justo quis nibh suscipit finibus id rhoncus turpis. Nullam laoreet lectus libero, eget semper velit fringilla id.<br><br>
-      Phasellus vulputate dui sapien, sit amet blandit dui venenatis sit amet. Nunc et lectus ipsum. Mauris ultrices fermentum nunc et pharetra. Duis malesuada enim enim.
-      </div>
-      <div class="btn btn-dark">Ver Publicação Completa</div>
+        <h2>Publicações</h2>
+      <% @publications.each do |publication| %>
+        <h1><%= publication.title %></h1>
+        <div class="publication__subtitle"><%= publication.subtitle %></div>
+        <div class="publication__author">Por <%= publication.author %>
+        </div>
+        <%= link_to "Ver Publicação Completa", publication_path(publication), class: 'btn btn-dark' %>
+      <% end %>
     </div>
     <div class="col-md-4 col-sm-12">
       <div class="publishing__box">
-          <h4>Publicações Principais</h4>
-          <div class="publishing__individual">
-            <div class="publishing__name">Lorem ipsum dolor sit amet, consectetur </div>
-            <div class="publishing__author">por Rafael Monteiro</div>
-          </div>
-          <div class="publishing__individual">
-            <div class="publishing__name">Ut turpis orci, cursus convallis risus id, sodales pulvinar </div>
-            <div class="publishing__author">por Rafael Monteiro</div>
-          </div>
-          <div class="publishing__individual">
-            <div class="publishing__name">Lorem ipsum dolor sit amet, consectetur </div>
-            <div class="publishing__author">por Rafael Monteiro</div>
-          </div>
+        <h4>Publicações Principais</h4>
+        <div class="publishing__individual">
+          <div class="publishing__name">Lorem ipsum dolor sit amet, consectetur </div>
+          <div class="publishing__author">por Rafael Monteiro</div>
         </div>
+        <div class="publishing__individual">
+          <div class="publishing__name">Ut turpis orci, cursus convallis risus id, sodales pulvinar </div>
+          <div class="publishing__author">por Rafael Monteiro</div>
+        </div>
+        <div class="publishing__individual">
+          <div class="publishing__name">Lorem ipsum dolor sit amet, consectetur </div>
+          <div class="publishing__author">por Rafael Monteiro</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

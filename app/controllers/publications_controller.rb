@@ -1,6 +1,7 @@
 class PublicationsController < ApplicationController
 
   def index
+    @publications = Publication.all
   end
 
   def show
@@ -13,7 +14,6 @@ class PublicationsController < ApplicationController
 
   def create
     @publication = Publication.new(publication_params)
-    @publication.text = @publication.text.gsub(/\n/, '<br>')
     if @publication.save
       redirect_to publication_path(@publication)
     else

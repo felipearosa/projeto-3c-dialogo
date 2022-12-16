@@ -49,6 +49,13 @@ class PublicationsController < ApplicationController
 
   end
 
+  def destroy
+    @publication = Publication.find(params[:id])
+    authorize current_user
+    @publication.destroy
+    redirect_to publications_path, status: :see_other
+  end
+
   private
 
   def publication_params

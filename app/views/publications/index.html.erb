@@ -1,7 +1,12 @@
+<% if current_user %>
+  <div class="container">
+    <%= link_to "New Publication", new_publication_path, class: "btn btn-dark m-2" %>
+  </div>
+<% end %>
 <div class="publication__container">
   <div class="row align-items-center">
     <div class="col-md-8 col-sm-12">
-        <h2>Publicações</h2>
+      <h2>Publicações</h2>
       <% @publications.each do |publication| %>
         <h1><%= publication.title %></h1>
         <div class="publication__subtitle"><%= publication.subtitle %></div>

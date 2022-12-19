@@ -8,6 +8,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  get '/treinamentos', to: 'trainnings#index'
-  resources :trainnings, only: [:index]
+  get '/treinamentos', to: 'pages#trainning'
 end

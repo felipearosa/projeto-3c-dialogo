@@ -62,7 +62,30 @@ if (window.location.pathname === '/') {
     },
   });
 
-  document.querySelector('.section__text').getBoundingClientRect()
+}
+
+
+
+if (window.location.pathname === '/livro') {
+  const swiper = new Swiper('.home__cards', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: '1',
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 3000,
+    },
+
+    effect: 'slide',
+
+  });
+
 }
 
 

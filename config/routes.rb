@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get '/treinamentos', to: 'pages#trainning'
+  get '/livro', to: 'pages#book'
 end

@@ -1,0 +1,35 @@
+<section class="section--book--page">
+  <div class="book__container">
+    <div class="row w-100">
+      <div class="book__image col-6">
+        <div class="book__title--container">
+          <div class="book__title">
+            <h3><span>O Poder<br>
+                do Diálogo</span></h3>
+          </div>
+        </div>
+        <%= image_tag("livro.png", :alt => "Livro O Poder do Diálogo") %>
+      </div>
+      <div class="book__text col-6 align-self-end">
+        <div class="book__subtext--page">
+          Em seu primeiro livro, Rafael Monteiro compartilha valiosas lições e técnicas poderosas de diálogo que desenvolveu a partir de pesquisas e experiências práticas no cotidiano, que podem ser aplicadas em qualquer interação interpessoal, em especial em conversas difíceis com quem temos discordâncias e até mesmo desavenças.
+        </div>
+        <a href="https://www.amazon.com.br/Poder-Di%C3%A1logo-Rafael-Araujo-Monteiro/dp/6500402472/" class="btn btn-light btn-custom btn-margin" target="_blank">Comprar agora</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="depo--section">
+  <div class="cards-container--home">
+    <div class="swiper-container">
+      <div class="swiper home__cards">
+        <div class="swiper-wrapper">
+          <%= render '/pages/depo_cards', locals:{ depo: "“A partir das práticas apresentadas, comecei a observar como me expresso e, principalmente, como ouvir o outro. Acredito que o mundo precise repensar a forma como dialoga, porque é a partir de olhares diferentes e diversos entendimentos que se pode chegar a algo que faça sentido para a maioria”", depo_name: "Ana Claudia Oliveira, executiva e consultora da área ambiental"} %>
+          <%= render '/pages/depo_cards', locals:{ depo: "“Consegui enxergar o quanto eu não sabia dialogar em diversas situações da minha vida. Hoje consigo encarar conversas difíceis com mais sabedoria, com mais calma, com menos julgamento e tentando sempre ouvir o outro”", depo_name: "Harley Figueiró, químico Industrial"} %>
+          <%= render '/pages/depo_cards', locals:{ depo: " “É muito instigante aprender sobre o diálogo com o Rafael me inspiro muito com a facilidade que ele tem de aplicar a teoria na prática”", depo_name: "Thaís Lopes, educadora ambiental"} %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

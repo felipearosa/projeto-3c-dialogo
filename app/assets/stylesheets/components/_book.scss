@@ -1,0 +1,45 @@
+.section--book--page {
+  height: 640px;
+  background-color: #000000;
+  position: relative;
+  top: 0px;
+  width: 100%;
+  background-image: url(/assets/hero-logo-3.png);
+  background-position: right -80px top -20px;
+  background-repeat: no-repeat;
+  margin-bottom: 70px;
+}
+
+.card__depo,
+.card__depo-name {
+  color: $primary-color;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+.card__depo {
+  line-height: 45px;
+}
+
+.card__depo-name {
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+.card__depo-content {
+  margin: auto;
+  padding: 0 80px;
+}
+
+.depo--section{
+  margin: 100px 0 50px 0;
+}
+
+.book__subtext--page{
+  padding: 15px;
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 200;
+  width: 600px;
+}

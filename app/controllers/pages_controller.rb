@@ -6,4 +6,7 @@ class PagesController < ApplicationController
 
   def trainning
   end
+
+  def book
+  end
 end

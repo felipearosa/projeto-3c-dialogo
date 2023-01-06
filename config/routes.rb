@@ -10,4 +10,5 @@ Rails.application.routes.draw do
 
   get '/treinamentos', to: 'pages#trainning'
   get '/livro', to: 'pages#book'
+  get '/sobre', to: 'pages#about'
 end

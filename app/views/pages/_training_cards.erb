@@ -6,8 +6,10 @@
       </div>
       <div class="card--training__text">
         <% if locals[:subtitle] %>
-          <span><%= locals[:subtitle] %></span><br><br>
+          <span><%= locals[:subtitle] %></span>
+        <br>
         <% end %>
+        <br>
         <%= locals[:text] %>
       </div>
       <a class="btn btn-blue mt-3" href="treinamentos#<%= locals[:sectionId] %>">Ver Treinamento</a>

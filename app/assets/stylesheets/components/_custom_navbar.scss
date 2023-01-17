@@ -1,19 +1,23 @@
 .custom-navbar {
   background-color: $primary-color;
   color: $secondary-color;
-  padding-top: 30px;
+  padding: 15px 0;
   z-index: 20;
   box-shadow: 0 4px 11px -3px #00000020;
   transition-property: color, background-color;
   transition-duration: 0.5s;
 }
 
+.custom-navbar img {
+  height: 50px;
+}
+
 .sticky-bar {
-  background-color: $secondary-color;
+  background-color: $primary-color;
 }
 
 .sticky-bar .navbar-options{
-  color: $primary-color;
+  color: $secondary-color;
 }
 
 

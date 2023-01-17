@@ -30,13 +30,37 @@
   line-height: 40px;
 }
 
+.trainnings:first-child{
+  margin: 100px auto;
+}
+
+
 .trainning{
   color: $primary-color;
-  margin: 100px auto;
+  margin: 160px auto;
   width: 80%;
   line-height: 40px;
   font-weight: 200;
+  position: relative;
 }
+
+.trainning:first-child{
+  margin: 100px auto;
+}
+
+.trainning:after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  height: 1px;
+  width: 10%;
+  margin: auto;
+  border-bottom: 0.5px solid $primary-color;
+  text-align: center;
+  right: 0;
+}
+
 
 .trainning__title h3 {
   font-size: 28px;

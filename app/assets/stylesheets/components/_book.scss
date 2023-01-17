@@ -1,6 +1,6 @@
 .section--book--page {
   height: 640px;
-  background-color: #000000;
+  background-color: $primary-color;
   position: relative;
   top: 0px;
   width: 100%;
@@ -47,7 +47,7 @@
 .depo--title{
   margin: 0 auto 20px 0;
   text-align: center;
-  color: #000000;
+  color: $primary-color;
   font-size: 40px;
   font-weight: 200;
 }

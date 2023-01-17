@@ -6,7 +6,13 @@
   height: 100px;
   padding: 0px 50px;
   color: $secondary-color;
+  box-shadow: 0 -4px 11px -3px #00000020;
 }
+
+.footer img {
+  height: 50px;
+}
+
 .footer-links {
   display: flex;
   align-items: center;

@@ -12,6 +12,7 @@ class PublicationsController < ApplicationController
 
   def new
     if current_user
+      @user = current_user
       @publication = Publication.new
     else
       redirect_to publications_path

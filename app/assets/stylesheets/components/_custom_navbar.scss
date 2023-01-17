@@ -2,7 +2,7 @@
   background-color: $primary-color;
   color: $secondary-color;
   padding-top: 30px;
-  z-index: 3;
+  z-index: 20;
   box-shadow: 0 4px 11px -3px #00000020;
   transition-property: color, background-color;
   transition-duration: 0.5s;
@@ -28,5 +28,5 @@
 }
 
 .navbar-options:hover, .navbar-options:focus, .navbar-options:active {
-  color: #474747;
+  color: #0d73BA;
 }

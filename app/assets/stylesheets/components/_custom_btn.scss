@@ -5,6 +5,15 @@
   margin: 20px 0;
 }
 
-.btn-margin{
+.btn-margin {
   margin: 20px 0 60px 20px;
+}
+
+.btn-blue {
+  background-color: $primary-color
+}
+
+.btn-blue:hover {
+  background-color: #1c41a7;
+  color: $secondary-color
 }

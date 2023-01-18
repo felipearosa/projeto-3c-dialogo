@@ -68,7 +68,7 @@
 
   .book__title--container {
     position: relative;
-    margin: 0;
+    margin: -40px;
   }
 
   .book__subtext--page {
@@ -103,5 +103,21 @@
   .depo__cards {
     width: 95%;
     height: 350px;
+  }
+}
+
+
+@media screen and (min-width: 1688px) {
+  .book__image img {
+    max-width: 736px;
+  }
+
+  .book__image--page img {
+    max-width: 736px;
+  }
+
+
+  .col-md-6{
+    width: 40%;
   }
 }

@@ -49,15 +49,19 @@ ul {
   margin-bottom: 70px;
 }
 
-.book__image {
+.book__image, .book__image--page {
   position: relative;
 }
 
-.book__image img {
+.book__image img, .book__image--page img {
   position: absolute;
-  top: -50px;
   width: 100%;
 }
+
+.book__image img {
+  top: -50px;
+}
+
 
 
 
@@ -181,7 +185,7 @@ ul {
 }
 
 .section--training {
-  margin: 200px 0 50px 0;
+  margin: 150px 0 50px 0;
 }
 
 .training__text {
@@ -224,7 +228,7 @@ ul {
 
 
 @media screen and (max-width: 913px) {
-  .book__image img {
+  .book__image img, .book__image--page img {
     max-width: 420px;
   }
 
@@ -241,6 +245,10 @@ ul {
 
   .book__title h3 {
     display: none;
+  }
+
+  .book__container{
+    margin: auto;
   }
 
   .book__text h3 span {
@@ -346,7 +354,7 @@ ul {
 }
 
 @media screen and (max-width: 420px) {
-  .book__image img {
+  .book__image img, .book__image--page img {
     max-width: 100%;
     top: 0;
   }

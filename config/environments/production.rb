@@ -1,6 +1,11 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
+
+  config.assets.precompile += %w( '.svg' )
+
+  # Must include to get inline SVGs to work in deploy
+  config.assets.css_compressor = :sass
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.

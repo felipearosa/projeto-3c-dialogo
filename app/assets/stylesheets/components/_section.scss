@@ -89,6 +89,7 @@ ul {
 .about__image img {
   display: block;
   margin: 0 0 0 auto;
+  max-width: 100%;
 }
 
 
@@ -213,4 +214,140 @@ ul {
 
 .tranning__box {
   margin-top: 20px;
+}
+
+.book__text h3 span {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 913px) {
+  .book__image img {
+    max-width: 420px;
+  }
+
+  .book__title--container {
+    top: 210px;
+    left: 48px;
+  }
+
+  .book__subtext {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 20px;
+  }
+
+  .book__title h3 {
+    display: none;
+  }
+
+  .book__text h3 span {
+    margin-left: 20px;
+    line-height: 70px;
+    font-size: 50px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    box-shadow: -10px 0px 0 7px $secondary-color,
+      10px 0px 0 7px $secondary-color,
+      0 0 0 7px $secondary-color;
+    box-decoration-break: clone;
+    position: relative;
+    display: inline;
+    font-weight: 600;
+  }
+
+  .book__text {
+    margin: -30px 0 0 20px;
+  }
+
+  .book__subtext {
+    padding: 0;
+  }
+
+  .section--book {
+    height: 100%;
+  }
+
+  .book__title--container {
+    right: 0
+  }
+
+  .section--about {
+    margin: 70px 0 0 40px;
+    width: 85%
+  }
+
+  .btn-custom {
+    margin: 10px 0 40px 0 !important;
+    padding: 7px 20px !important;
+    font-size: 20px !important;
+  }
+
+  .about__text {
+    padding: 0 0 20px 0;
+  }
+
+  .about__text h3 {
+    font-size: 32px;
+  }
+
+  .hero-text {
+    padding: 20px;
+  }
+
+  .section__text {
+    padding: 50px 0;
+    width: 80%;
+  }
+
+  .section__text h3 {
+    line-height: 35px;
+    font-size: 18px;
+  }
+
+  .card__text {
+    font-size: 18px;
+  }
+
+  .about__text ul {
+    font-size: 18px;
+  }
+
+  .section--training {
+    margin: 110px 0 80px 0;
+  }
+
+  .training__subtext {
+    line-height: 34px;
+    font-size: 18px;
+  }
+
+  .footer {
+    justify-content: center !important;
+  }
+
+  .footer img {
+    display: none;
+  }
+
+  .custom-navbar img {
+    height: 40px;
+  }
+
+  .navbar-nav--custom {
+    margin: 20px 5px;
+  }
+
+  .training__cards  {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .book__image img {
+    max-width: 100%;
+    top: 0;
+  }
 }

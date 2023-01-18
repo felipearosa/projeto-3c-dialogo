@@ -1,7 +1,7 @@
 <section class="section--book--page" data-controller="depo-cards">
   <div class="book__container">
     <div class="row w-100">
-      <div class="book__image col-6">
+      <div class="book__image col-sm-12 col-md-6">
         <div class="book__title--container">
           <div class="book__title">
             <h3><span>O Poder<br>
@@ -10,7 +10,9 @@
         </div>
         <%= image_tag("livro.png", :alt => "Livro O Poder do Diálogo") %>
       </div>
-      <div class="book__text col-6 align-self-end">
+      <div class="book__text col-sm-12 col-md-6 align-self-end">
+      <h3><span>O Poder<br>
+                do Diálogo</span></h3>
         <div class="book__subtext--page">
           Em seu primeiro livro, Rafael Monteiro compartilha valiosas lições e técnicas poderosas de diálogo que desenvolveu a partir de pesquisas e experiências práticas no cotidiano, que podem ser aplicadas em qualquer interação interpessoal, em especial em conversas difíceis com quem temos discordâncias e até mesmo desavenças.
         </div>
@@ -25,7 +27,7 @@
   </div>
   <div class="cards-container--home">
     <div class="swiper-container">
-      <div class="swiper home__cards">
+      <div class="swiper depo__cards home__cards">
         <div class="swiper-wrapper">
           <%= render '/pages/depo_cards', locals:{ depo: "“A partir das práticas apresentadas, comecei a observar como me expresso e, principalmente, como ouvir o outro. Acredito que o mundo precise repensar a forma como dialoga, porque é a partir de olhares diferentes e diversos entendimentos que se pode chegar a algo que faça sentido para a maioria”", depo_name: "Ana Claudia Oliveira, executiva e consultora da área ambiental"} %>
           <%= render '/pages/depo_cards', locals:{ depo: "“Consegui enxergar o quanto eu não sabia dialogar em diversas situações da minha vida. Hoje consigo encarar conversas difíceis com mais sabedoria, com mais calma, com menos julgamento e tentando sempre ouvir o outro”", depo_name: "Harley Figueiró, químico Industrial"} %>

@@ -1,9 +1,9 @@
-.trainning-banner{
+.trainning-banner {
   height: 90vh;
   background-color: $primary-color;
   position: relative;
   width: 100%;
-  background-image:url("./assets/hero-logo-3.png");
+  background-image: url("./assets/hero-logo-3.png");
   background-position: right 10px top 50%;
   background-repeat: no-repeat;
 }
@@ -19,7 +19,7 @@
   width: 80%;
 }
 
-.trainning-text > h1 {
+.trainning-text>h1 {
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -30,12 +30,12 @@
   line-height: 40px;
 }
 
-.trainnings:first-child{
+.trainnings:first-child {
   margin: 100px auto;
 }
 
 
-.trainning{
+.trainning {
   color: $primary-color;
   margin: 160px auto;
   width: 80%;
@@ -44,8 +44,12 @@
   position: relative;
 }
 
-.trainning:first-child{
+.trainning:first-child {
   margin: 100px auto;
+}
+
+.trainning:last-child::after {
+  border-bottom: 0 solid $primary-color
 }
 
 .trainning:after {
@@ -66,11 +70,12 @@
   font-size: 28px;
 }
 
-.trainning__subtitle{
+.trainning__subtitle {
   font-size: 24px;
 }
 
-.trainning__content span, .trainning__objective span {
+.trainning__content span,
+.trainning__objective span {
   background-color: $primary-color;
   color: $secondary-color;
   padding: 2px 10px;
@@ -78,7 +83,8 @@
   display: inline-block;
 }
 
-.trainning__objective, .trainning__content{
+.trainning__objective,
+.trainning__content {
   font-size: 22px;
 }
 
@@ -92,13 +98,58 @@
   font-weight: 600;
 }
 
-.tranning__box{
+.tranning__box {
   margin-top: 60px;
   font-size: 18px;
 }
 
-.multi-list ul{
+.multi-list ul {
   columns: 1;
   -webkit-columns: 1;
   -moz-columns: 1;
+}
+
+
+@media screen and (max-width: 913px) {
+  .trainning_subheader {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .trainning-text {
+    width: 90%;
+  }
+
+  .trainning__title h3 {
+    font-size: 24px;
+  }
+
+  .trainning__subtitle {
+    font-size: 20px;
+  }
+
+
+  .trainning__objective,
+  .trainning__content,
+  .tranning__box {
+    font-size: 18px;
+  }
+
+  .trainning {
+    line-height: 34px;
+  }
+
+  .trainning__content ul {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+
+  .card--content {
+    padding: 0;
+  }
+
+  .card--training__stat {
+    margin: 10px 0;
+  }
 }

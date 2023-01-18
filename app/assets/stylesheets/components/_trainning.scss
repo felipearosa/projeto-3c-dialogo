@@ -94,6 +94,14 @@
   -moz-columns: 2;
 }
 
+.card--training__stat  {
+  display: inline;
+}
+
+.card--training__stat a{
+  text-decoration: none;
+}
+
 .card--training__stat span {
   font-weight: 600;
 }

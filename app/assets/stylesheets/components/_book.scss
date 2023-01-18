@@ -32,11 +32,11 @@
   padding: 0 50px;
 }
 
-.depo--section{
+.depo--section {
   margin: 100px 0 50px 0;
 }
 
-.book__subtext--page{
+.book__subtext--page {
   padding: 15px;
   font-size: 20px;
   line-height: 35px;
@@ -44,10 +44,64 @@
   width: 600px;
 }
 
-.depo--title{
+.depo--title {
   margin: 0 auto 20px 0;
   text-align: center;
   color: $primary-color;
   font-size: 40px;
   font-weight: 200;
+}
+
+.depo__card--width {
+  height: 250px;
+  width: 80%;
+}
+
+@media screen and (max-width:913px) {
+  .book__subtext--page {
+    width: 100%;
+  }
+
+  .section--book--page {
+    height: 100%;
+  }
+
+  .book__title--container {
+    position: relative;
+    margin: 0;
+  }
+
+  .book__subtext--page {
+    padding: 10px;
+    line-height: 40px;
+  }
+
+  .depo--section{
+    margin: 50px 0;
+  }
+
+  .depo--title{
+    font-size: 30px;
+    padding: 0 20px;
+  }
+
+  .card__depo-content{
+    padding: 0 10px;
+  }
+
+  .card__depo, .card__depo-name{
+    line-height: 28px;
+    font-size: 18px;
+  }
+
+  .depo__card--width {
+    height: 100%;
+    width: 95%;
+  }
+
+
+  .depo__cards {
+    width: 95%;
+    height: 350px;
+  }
 }

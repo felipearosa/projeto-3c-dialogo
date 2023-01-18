@@ -221,7 +221,9 @@ ul {
 }
 
 
-@media screen and (max-width: 900px) {
+
+
+@media screen and (max-width: 913px) {
   .book__image img {
     max-width: 420px;
   }
@@ -257,7 +259,7 @@ ul {
   }
 
   .book__text {
-    margin: 320px 0 0 20px;
+    margin: -30px 0 0 20px;
   }
 
   .book__subtext {
@@ -338,5 +340,14 @@ ul {
     margin: 20px 5px;
   }
 
+  .training__cards  {
+    height: 600px;
+  }
+}
 
+@media screen and (max-width: 420px) {
+  .book__image img {
+    max-width: 100%;
+    top: 0;
+  }
 }
